@@ -1,0 +1,26 @@
+<h2>Nos artisans proposant des services</h2>
+<section class="card-group">
+  <div
+    *ngFor="let artisan of artisanList"
+    (click)="goToArtisan(artisan)"
+    class="card"
+    artisanBorderCard
+  >
+    <div class="card-body">
+      <h3 class="card-title">{{ artisan.name }}</h3>
+      <div class="card-text">
+        <h3>Note :</h3>
+        <i class="lar la-star">&#9733;</i>
+        <i class="lar la-star">&#9733;</i>
+        <i class="lar la-star">&#9733;</i>
+        <i class="lar la-star">&#9733;</i>
+        <i class="lar la-star">&#9733;</i>
+        <p>{{ artisan.note }}/5</p>
+        <h3>Spécialité :</h3>
+        <p>{{ artisan.specialty }}</p>
+        <h3>Localisation :</h3>
+        <p>{{ artisan.location }}</p>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,43 @@
+.card-group {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    gap: 20px;
+}
+
+.card {
+    margin-top: 0;
+    cursor: pointer;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    background-color: #0074c7 ;
+    color: #f1f8fc;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 0;
+}
+
+.card-title {
+    color: #00497c;
+    font-weight: bold;
+    font-size: 20px; 
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    text-decoration: underline;
+}
+
+
+.card-text h3 {
+    font-size: 16px;
+    color: #0074c7;
+}
+
+.card-text p {
+    font-size: 16px;
+    color: #384050;
+}
+

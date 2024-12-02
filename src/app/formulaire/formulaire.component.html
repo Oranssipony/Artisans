@@ -1,0 +1,62 @@
+<h2>Formulaire de contact</h2>
+<form [formGroup]="form">
+  <ul class="mb-3">
+    <li>
+      <label for="name" class="form-label"></label>
+      <input
+        type="text"
+        id="name"
+        class="form-control"
+        formControlName="name"
+        placeholder="Nom"
+        autocomplete="off"
+      />
+      <small
+        *ngIf="form.get('name')?.invalid && form.get('name')?.touched"
+        class="text-info"
+        >Merci de renseigner votre nom</small
+      >
+    </li>
+    <li>
+      <label for="object" class="form-label"></label>
+      <input
+        type="text"
+        id="object"
+        class="form-control"
+        formControlName="object"
+        placeholder="Objet"
+        autocomplete="off"
+      />
+      <small
+        *ngIf="form.get('object')?.invalid && form.get('object')?.touched"
+        class="text-info"
+        >Merci de renseigner l'objet de votre demande</small
+      >
+    </li>
+    <li>
+      <label for="textarea" class="form-label"></label>
+      <textarea
+        type="text"
+        id="textarea"
+        class="form-control"
+        formControlName="message"
+        placeholder="Votre message"
+        autocomplete="off"
+      ></textarea>
+      <small
+        *ngIf="form.get('message')?.invalid && form.get('message')?.touched"
+        class="text-info"
+        >Merci de préciser votre demande (minimum 20 caractères)</small
+      >
+    </li>
+  </ul>
+  <button
+    (click)="clicksub()"
+    [disabled]="form.invalid"
+    type="button"
+    class="btn"
+    style="background-color: #0074c7; color: #f1f8fc"
+  >
+    Envoyer
+  </button>
+</form>

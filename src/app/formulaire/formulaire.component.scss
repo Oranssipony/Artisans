@@ -1,0 +1,92 @@
+h2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #0074c7;
+  color: #f1f8fc;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+form {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 500px;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+input,
+textarea {
+  font: 1em sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #0074c7;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #00497c;
+}
+
+textarea {
+  vertical-align: top;
+  height: 5em;
+  resize: vertical;
+}
+
+form .btn {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  margin-top: 5px;
+  width: 170px;
+  align-items: center;
+  color: #f1f8fc;
+  font-weight: bold;
+  background-color: #0074c7;
+  border: #00497c;
+}
+
+.form-control.ng-touched.ng-invalid {
+  border: 1px solid #cd2c2e;
+  border-radius: 10px;
+}
+
+.form-control.ng-touched.ng-valid {
+  border: 1px solid #82b864;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 128px) and (max-width: 900px) {
+  form {
+    width: auto;
+    padding: 5px;
+  }
+
+  button.btn {
+    display: flex;
+    align-items: center;
+  }
+}

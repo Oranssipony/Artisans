@@ -1,0 +1,26 @@
+.display-1 {
+  color: #00497c;
+}
+
+h3 {
+  color: #cd2c2e;
+  font-weight: bold;
+}
+
+p {
+  color: #384050;
+}
+
+.btn {
+  color: #f1f8fc;
+  background-color: #0074c7;
+  border: #00497c;
+}
+
+@media screen and (min-width: 128px) and (max-width: 900px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

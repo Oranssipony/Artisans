@@ -1,0 +1,45 @@
+<!-- Fiche avec détail des artisans selectionnés -->
+
+<div class="main-container">
+  <div *ngIf="artisan" class="card-container">
+    <div class="card">
+      <div class="card-content">
+        <h2>{{ artisan.name }}</h2>
+        <div class="card-body">
+          <div class="card-text">
+            <h3>Spécialité :</h3>
+            <p>{{ artisan.specialty }}</p>
+            <h3>Note :</h3>
+            <i class="lar la-star">&#9733;</i>
+            <i class="lar la-star">&#9733;</i>
+            <i class="lar la-star">&#9733;</i>
+            <i class="lar la-star">&#9733;</i>
+            <i class="lar la-star">&#9733;</i>
+            <p>{{ artisan.note }}/5</p>
+            <h3>Localisation :</h3>
+            <p>{{ artisan.location }}</p>
+            <h3>A propos :</h3>
+            <p>{{ artisan.about }}</p>
+            <h3>E-mail :</h3>
+            <p>{{ artisan.email }}</p>
+            <h3>Site internet :</h3>
+            <p>{{ artisan.website }}</p>
+            <h3>Catégorie :</h3>
+            <p>{{ artisan.category }}</p>
+          </div>
+        </div>
+        <div class="retour">
+          <a
+            routerLink="/"
+            class="btn"
+            style="background-color: #0074c7; color: #f1f8fc"
+            >Retour</a
+          >
+        </div>
+        <div>
+          <app-formulaire></app-formulaire>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,48 @@
+<section class="card-group">
+  <h2>Liste des artisans</h2>
+
+  <!-- barre de recherche -->
+
+  <div class="form-outline mt-3">
+    <input
+      type="search"
+      [(ngModel)]="searchtext"
+      id="form1"
+      class="form-control"
+      placeholder="Rechercher..."
+      aria-label="rechercher"
+    />
+  </div>
+
+  <!-- Carte artisan -->
+
+  <div
+    *ngFor="let artisan of artisanList | filter : searchtext"
+    class="card"
+    artisanBorderCard
+    (click)="goToArtisan(artisan)"
+  >
+    <div class="card-body">
+      <h3 class="card-title">{{ artisan.name }}</h3>
+      <div class="card-text">
+        <h3>Spécialité :</h3>
+        <p>{{ artisan.specialty }}</p>
+        <h3>Note :</h3>
+        <i class="lar la-star">&#9733;</i>
+        <i class="lar la-star">&#9733;</i>
+        <i class="lar la-star">&#9733;</i>
+        <i class="lar la-star">&#9733;</i>
+        <i class="lar la-star">&#9733;</i>
+        <p>{{ artisan.note }}/5</p>
+        <h3>Localisation :</h3>
+        <p>{{ artisan.location }}</p>
+        <h3>A propos :</h3>
+        <p>{{ artisan.about }}</p>
+        <h3>E-mail :</h3>
+        <p>{{ artisan.email }}</p>
+        <h3>Site internet :</h3>
+        <p>{{ artisan.website }}</p>
+      </div>
+    </div>
+  </div>
+</section>
