@@ -1,0 +1,13 @@
+{
+  "routes": [
+    "/",
+    "/accessibilite",
+    "/alimentation",
+    "/batiment",
+    "/cookies",
+    "/donnees",
+    "/fabrication",
+    "/mentions",
+    "/services"
+  ]
+}
